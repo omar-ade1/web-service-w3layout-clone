@@ -4,19 +4,19 @@ function ImportanceOfSkills() {
   let data = [
     {
       title: "Figma illustrations",
-      progress: "80",
+      progress: "80%",
     },
     {
       title: "PHP programming",
-      progress: "95",
+      progress: "95%",
     },
     {
       title: "Web design & development",
-      progress: "90",
+      progress: "90%",
     },
     {
       title: "Adobe Photoshop",
-      progress: "75",
+      progress: "75%",
     },
   ];
   const [scrollBars, setScrollBars] = useState(false);
@@ -48,7 +48,7 @@ function ImportanceOfSkills() {
                 <div key={index} className="bar">
                   <p className="title text-[#22123f] font-bold">{bar.title}</p>
                   <div className="progress w-full h-2 relative bg-white shadow-lg rounded-full">
-                    <span className={`w-[${bar.progress}%] h-full absolute`}>
+                    <span style={{width: `${bar.progress}`}} className={`h-full absolute`}>
                       <span
                         className={`bg-red-500 absolute h-full ${
                           scrollBars ? "animate-barsAnimation" : ""
@@ -59,7 +59,7 @@ function ImportanceOfSkills() {
                            ${scrollBars === true ? "opacity-100" : "opacity-0"} 
                            text-[#22123f] font-bold transition-all duration-1000`}
                         >
-                          {bar.progress}%
+                          {bar.progress}
                         </span>
                       </span>
                     </span>
