@@ -23,7 +23,7 @@ function TextLinks() {
     },
   ];
   return (
-    <div className="py-[50px]" id="text-links-part">
+    <div className="py-[50px] dark:bg-[#31363F]" id="text-links-part">
       <div className="container smT0:px-5 px-3 grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-y-10 gap-x-3 mx-auto">
         {data.map((box, index) => {
           return (
@@ -32,7 +32,7 @@ function TextLinks() {
                 0{index + 1}. {box.span}
               </span>
               <h2>
-                <Link className="text-[#22123f] text-2xl font-bold block lg:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[350px] hover:text-rose-500" to="">
+                <Link className="text-[#22123f] dark:text-[#eeeeee] text-2xl font-bold block lg:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[350px] hover:text-rose-500" to="">
                   {box.title}
                 </Link>
               </h2>

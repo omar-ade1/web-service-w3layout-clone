@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: 'selector',
   theme: {
     extend: {
       animation: {
@@ -19,15 +20,15 @@ module.exports = {
       },
     },
     screens: {
-      xsm: {  max: "766px" },
+      xsm: { max: "766px" },
 
       sm: { min: "640px", max: "767px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }
       smT0: { max: "767px" },
       smTlg: { min: "640px", max: "1279px" },
-      
+
       mdTxl: { min: "768px", max: "1535px" },
-      
+
       md: { min: "768px", max: "1023px" },
       // => @media (min-width: 768px and max-width: 1023px) { ... }
 

@@ -2,13 +2,13 @@ import React from "react";
 
 function Subscribe() {
   return (
-    <div className="py-[50px] bg-slate-200">
+    <div className="py-[50px] bg-slate-200 dark:bg-[#31363F]">
       <div className="container mx-auto smT0:px-5 px-3">
         <div className="title w-fit mx-auto mb-5 text-center capitalize">
-          <h2 className="text-2xl font-bold capitalize text-[#22123f] tracking-wider">
+          <h2 className="text-2xl font-bold capitalize text-[#22123f] dark:text-[#eeeeee] tracking-wider">
             subscribe newsletter
           </h2>
-          <p className="text-sm text-[#3a206a]">
+          <p className="text-sm text-[#3a206a] dark:text-[#eeeeee]">
             enter your email & receive the latest news, updates & special offers
             from us.
           </p>

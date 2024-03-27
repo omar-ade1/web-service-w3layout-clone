@@ -29,11 +29,11 @@ function ImportanceOfSkills() {
   window.addEventListener("scroll", sco);
 
   return (
-    <div id="bars" className="Importance-of-skills py-[50px] bg-slate-200">
+    <div id="bars" className="Importance-of-skills py-[50px] bg-slate-200 dark:bg-[#222831]">
       <div className="container mx-auto smT0:px-5 px-3 flex smT0:flex-col justify-between items-center">
         <div className="text-and-progress w-[45%] smT0:w-full">
           <div className="title">
-            <h2 className="text-3xl text-[#22123f] font-bold">
+            <h2 className="text-3xl text-[#22123f] dark:text-[#eeeeee] font-bold">
               Importance of Skills
             </h2>
             <p className="text-gray-500 mt-4">
@@ -46,7 +46,7 @@ function ImportanceOfSkills() {
             {data.map((bar, index) => {
               return (
                 <div key={index} className="bar">
-                  <p className="title text-[#22123f] font-bold">{bar.title}</p>
+                  <p className="title text-[#22123f] dark:text-[#eeeeee] font-bold">{bar.title}</p>
                   <div className="progress w-full h-2 relative bg-white shadow-lg rounded-full">
                     <span style={{width: `${bar.progress}`}} className={`h-full absolute`}>
                       <span
@@ -57,7 +57,7 @@ function ImportanceOfSkills() {
                         <span
                           className={`absolute right-0 w-[20px] top-[-25px] h-[20px] 
                            ${scrollBars === true ? "opacity-100" : "opacity-0"} 
-                           text-[#22123f] font-bold transition-all duration-1000`}
+                           text-[#22123f] dark:text-[#eeeeee] font-bold transition-all duration-1000`}
                         >
                           {bar.progress}
                         </span>

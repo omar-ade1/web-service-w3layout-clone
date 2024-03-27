@@ -53,7 +53,7 @@ function ImagesGallary() {
     },
   ];
   return (
-    <div className="image-gallary py-[50px] bg-slate-200">
+    <div className="image-gallary py-[50px] bg-slate-200 dark:bg-[#222831]">
       <div className="container mx-auto smT0:px-5 px-3 grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] smT0:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
         {data.map((box,index) => {
           return (

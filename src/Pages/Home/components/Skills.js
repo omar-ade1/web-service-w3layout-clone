@@ -50,7 +50,7 @@ function Skills() {
     },
   ];
   return (
-    <div className="skills py-[50px]">
+    <div className="skills py-[50px] dark:bg-[#31363F]">
       <div className="container mx-auto smT0:px-5 px-3 flex flex-wrap justify-between gap-y-5">
         {data.map((box,index) => {
           return (
@@ -67,7 +67,7 @@ function Skills() {
               
                 <h2>
                   <Link
-                    className="text-[#22123f] text-2xl font-bold block lg:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[350px] hover:text-rose-500"
+                    className="text-[#22123f] dark:text-[#eeeeee] text-2xl font-bold block lg:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[350px] hover:text-rose-500"
                     to=""
                   >
                     {box.title}
