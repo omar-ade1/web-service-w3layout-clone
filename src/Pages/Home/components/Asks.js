@@ -44,7 +44,7 @@ function Asks() {
         <div className="asks-part py-3 w-[30%] smT0:w-[100%]  md:w-[100%]">
           {data.map((ask, index) => {
             return (
-              <div className="ask-box group cursor-pointer select-none transition-all duration-300">
+              <div key={index} className="ask-box group cursor-pointer select-none transition-all duration-300">
                 <div
                   onClick={() => {
                     toggleData(index);

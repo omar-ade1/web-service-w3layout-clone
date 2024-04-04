@@ -65,11 +65,11 @@ function Quets() {
     >
       <div className="container mx-auto smT0:px-5 px-3 relative">
         <div className="quets-box flex space-x-2 overflow-hidden relative">
-          {data.map((quet) => {
+          {data.map((quet,index) => {
             // f10d
             return (
-              <>
-                <div className="quet shrink-0 w-1/2 xsm:w-full p-3">
+              
+                <div key={index} className="quet shrink-0 w-1/2 xsm:w-full p-3">
                   <div className="text mx-auto max-w-[430px]">
                     <q className=" block text-white font-semibold text-lg tracking-wide before:content-['']">
                 <FontAwesomeIcon className="text-red-500 mr-3 text-3xl" icon={faQuoteLeft} />
@@ -81,14 +81,14 @@ function Quets() {
                   </div> 
                   </div>
                 </div>
-              </>
+              
             );
           })}
         </div>
         <div className="bullets flex justify-center mt-10 gap-2">
           {numberOfBullets.map((quet, index) => {
             return (
-              <button
+              <button key={index}
                 onClick={(event) => {
                   Array.from(event.target.parentElement.children).forEach((btn) => {
                     btn.classList.remove("active-bullets")
