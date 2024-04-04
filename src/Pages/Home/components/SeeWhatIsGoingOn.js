@@ -16,9 +16,7 @@ function SeeWhatIsGoingOn({ data, title }) {
                   <h3 className="capitalize font-semibold text-[#22123f] dark:text-[#eeeeee]">{box.title}</h3>
                   <span className="text-gray-500 capitalize">{box.history}</span>
                   <p className="mt-3 text-purple-900 dark:text-[#76ABAE]">{box.description}</p>
-                  <button
-                    className="block border-b-2 w-fit capitalize mt-3 border-b-red-500 dark:border-b-[#007F73] transition-transform duration-300 text-[#d34588] font-bold hover:scale-110"
-                  >
+                  <button className="block border-b-2 w-fit capitalize mt-3 border-b-red-500 dark:border-b-[#007F73] transition-transform duration-300 text-[#a4004d] dark:text-red-500 font-bold hover:scale-110">
                     read more
                   </button>
                 </div>

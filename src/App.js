@@ -10,7 +10,7 @@ import BlogPosts from "./Pages/PartOfPages/BlogPosts";
 import BlogSingle from "./Pages/PartOfPages/BlogSingle";
 import Page404 from "./Pages/PartOfPages/Page404";
 import LandingPage from "./Pages/PartOfPages/LandingPage";
-
+import Tests from "./components/Tests"
 function App() {
   const location = useLocation();
   return (
@@ -26,6 +26,7 @@ function App() {
           <Route path="/blog-single" element={<BlogSingle />} />
           <Route path="/404" element={<Page404 />} />
           <Route path="/landing-page" element={<LandingPage />} />
+          <Route path="/test" element={<Tests />} />
         </Routes>
       </AnimatePresence>
       <Footer />

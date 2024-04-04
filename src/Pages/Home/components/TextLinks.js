@@ -6,20 +6,17 @@ function TextLinks() {
     {
       span: "video productions",
       title: "Stunning video sequence and impressing ideas are all here.",
-      discription:
-        "Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in faucibus orci dolor sit et amet.",
+      discription: "Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in faucibus orci dolor sit et amet.",
     },
     {
       span: "BRANDING DESIGN",
       title: "Great reflection of your brand be achieved by top designers.",
-      discription:
-        "Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in faucibus orci dolor sit et amet.",
+      discription: "Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in faucibus orci dolor sit et amet.",
     },
     {
       span: "GRAPHIC DESIGN",
       title: "Creating gorgeous graphic design meeting clients needs.",
-      discription:
-        "Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in faucibus orci dolor sit et amet.",
+      discription: "Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet ipsum primis in faucibus orci dolor sit et amet.",
     },
   ];
   return (
@@ -32,7 +29,10 @@ function TextLinks() {
                 0{index + 1}. {box.span}
               </span>
               <h2>
-                <Link className="text-[#22123f] dark:text-[#eeeeee] text-2xl font-bold block lg:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[350px] hover:text-rose-500" to="">
+                <Link
+                  className="text-[#22123f] dark:text-[#eeeeee] text-2xl font-bold block lg:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[350px] hover:text-rose-500"
+                  to=""
+                >
                   {box.title}
                 </Link>
               </h2>

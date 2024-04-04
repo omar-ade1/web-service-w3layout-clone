@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="pt-[50px] bg-[#26243c] text-[#97a1a9]">
+    <footer className="pt-[50px] bg-[#26243c] dark:bg-[#282734] text-[#97a1a9]">
       <div className="container mx-auto smT0:px-5 px-3 grid sm:grid-cols-2 xsm:grid-cols-1 grid-cols-4 gap-3 pb-4">
         <div className="logo-and-describe sm:text-center xsm:text-center">
           <h2 className="logo capitalize tracking-wider md:tracking-normal font-['Pacifico'] text-3xl text-white md:text-2xl font-bold ">
